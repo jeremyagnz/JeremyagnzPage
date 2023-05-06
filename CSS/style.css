@@ -539,8 +539,8 @@
     background-color:var(--first-color) ;
 }
 
-.skills__html{
-    width: 90%;
+.skills__react{
+    width: 70%;
 }
 .skills__css{
     width: 80%;
@@ -549,7 +549,7 @@
     width: 50%;
 }
 .skills__angular{
-    width: 45%;
+    width: 85%;
 }
 .skills__php{
     width: 70%;
