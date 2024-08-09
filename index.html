@@ -24,7 +24,7 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"> Jeremy</a>
+            <a href="#" class="nav__logo"> Jeremy Arias</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -88,17 +88,17 @@
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
 
-                        <a href="" class="home__social-icon target=" __blank"">
+                        <!-- <a href="" class="home__social-icon target=" __blank="">
                             <i class="uil uil-dribbble"></i>
                         </a>
-
+ -->
                         <a href="https://github.com/jeremyagnz" target="__blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
 
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="home__blob" viewBox="-14 0 220 190" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -111,7 +111,7 @@
                             165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x='5' y='-25' xlink:href="IMG/profile.png" />
+                                <image class="home__blob-img" x='-25' y='3' xlink:href="IMG/MainPhoto.png" transform = "scale(1.3)" />
                             </g>
                         </svg>
                     </div>
@@ -160,22 +160,20 @@
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">04+</span>
+                            <span id="yearsExperience" class="about__info-title"></span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
-
+                    
                         <div>
                             <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Completed <br> proyect</span>
+                            <span class="about__info-name">Completed <br> projects</span>
                         </div>
-
+                    
                         <div>
                             <span class="about__info-title">04+</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
-                    </div>
-
-                    <div class="about__buttons">
+                    </div><div class="about__buttons">
                         <a download="" href="PDF/📑ENGLISH - CV.pdf" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
@@ -723,7 +721,7 @@
                         </a>
                     </div>
 
-                    <img src="IMG/profile.png" alt="" class="project__img">
+                    <img src="IMG/MainPhoto.png" alt="" class="project__img">
                 </div>
             </div>
         </section>
@@ -744,16 +742,16 @@
 
                                 <div>
                                     <h3 class="testimonial__name">Carlos F. Diaz</h3>
-                                    <span class="testimonial__client">Client</span>
+                                    <span class="testimonial__client">Coworker</span>
                                 </div>
                             </div>
 
                             <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
                             </div>
                         </div>
 
@@ -776,11 +774,11 @@
                             </div>
 
                             <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
+                                <i class="uim uim-favorite testimonial__icon-star"></i>
                             </div>
                         </div>
 
@@ -847,11 +845,12 @@
                         </div>
                         <div class="contact__content">
                             <label for="project" class="contact__label">Project</label>
-                            <input type="text" id="project" class="contact__input" required>
+                            <textarea id="project" cols="0" rows="7" class="contact__input" required></textarea>
                         </div>
                         <div class="contact__content">
                             <label for="message" class="contact__label">Message</label>
-                            <textarea id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                            <textarea id="message" cols="0" rows="7" class="contact__input" required>   
+                            </textarea>
                         </div>
         
                         <div>
@@ -917,6 +916,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
     <script src="js/main.js"> </script>
+    <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"></script>
 </body>
 
 </html>

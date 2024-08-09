@@ -242,3 +242,11 @@ document
     // Abrir el enlace mailto en una nueva ventana
     window.location.href = mailtoLink;
   });
+
+// Calcula los años de experiencia desde 2019 hasta el año actual
+const startYear = 2020;
+const currentYear = new Date().getFullYear();
+const yearsExperience = currentYear - startYear + 1; 
+
+// Actualiza el contenido del span con el ID "yearsExperience"
+document.getElementById("yearsExperience").textContent = yearsExperience + "+";
