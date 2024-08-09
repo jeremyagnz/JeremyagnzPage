@@ -246,7 +246,19 @@ document
 // Calcula los años de experiencia desde 2019 hasta el año actual
 const startYear = 2020;
 const currentYear = new Date().getFullYear();
-const yearsExperience = currentYear - startYear + 1; 
+const yearsExperience = currentYear - startYear + 1;
 
-// Actualiza el contenido del span con el ID "yearsExperience"
-document.getElementById("yearsExperience").textContent = yearsExperience + "+";
+let currentDisplayValue = 0;
+const incrementSpeed = 200; // Velocidad de incremento en milisegundos (más lento)
+
+function incrementYears() {
+  if (currentDisplayValue < yearsExperience) {
+    currentDisplayValue++;
+    document.getElementById("yearsExperience").textContent =
+      currentDisplayValue + "+";
+  } else {
+    clearInterval(interval);
+  }
+}
+
+const interval = setInterval(incrementYears, incrementSpeed);
