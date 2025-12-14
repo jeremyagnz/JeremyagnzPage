@@ -494,7 +494,8 @@ img {
 .cv__message {
     text-align: center;
     padding: 1rem 1.5rem;
-    background-color: var(--first-color-lighter);
+    background-color: var(--container-color);
+    border: 2px solid var(--first-color-lighter);
     border-radius: 0.5rem;
     font-size: var(--normal-font-size);
     color: var(--text-color);
